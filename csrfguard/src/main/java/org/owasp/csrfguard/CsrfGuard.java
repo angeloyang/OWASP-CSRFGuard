@@ -536,7 +536,8 @@ public final class CsrfGuard {
 	}
 
 	private boolean isAjaxRequest(HttpServletRequest request) {
-		return request.getHeader("X-Requested-With") != null;
+		String xrw = request.getHeader("X-Requested-With");
+		return xrw != null && xrw.toLowerCase().contains("xmlhttprequest");
 	}
 
 	private void verifyAjaxToken(HttpServletRequest request) throws CsrfGuardException {

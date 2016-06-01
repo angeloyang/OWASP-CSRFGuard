@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.owasp</groupId>
 	<artifactId>csrfguard</artifactId>
-	<version>3.1.0-SNAPSHOT</version>
+	<version>3.1.0</version>
 	<packaging>jar</packaging>
 	<name>OWASP CSRFGuard</name>
 	<description>OWASP CSRFGuard is a library that implements a variant of the synchronizer token pattern to mitigate the risk of Cross-Site Request Forgery (CSRF) attacks.</description>
@@ -18,8 +18,8 @@
 		</license>
 	</licenses>
 	<scm>
-		<url>https://github.com/esheri3/OWASP-CSRFGuard</url>
-		<connection>https://github.com/esheri3/OWASP-CSRFGuard.git</connection>
+		<url>http://192.168.3.131/sas/OWASP-CSRFGuard</url>
+		<connection>http://192.168.3.131/sas/OWASP-CSRFGuard.git</connection>
 	</scm>
 	<developers>
 		<developer>
@@ -75,6 +75,7 @@
 							<Url>${project.url}</Url>
 						</manifestEntries>
 					</archive>
+					<classifier>ecw</classifier>
 				</configuration>
 			</plugin>
 			<plugin>
