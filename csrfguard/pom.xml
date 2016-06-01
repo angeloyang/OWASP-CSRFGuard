@@ -18,9 +18,23 @@
 		</license>
 	</licenses>
 	<scm>
-		<url>http://192.168.3.131/sas/OWASP-CSRFGuard</url>
-		<connection>http://192.168.3.131/sas/OWASP-CSRFGuard.git</connection>
+		<connection>scm:git:http://192.168.3.131/sas/OWASP-CSRFGuard.git</connection>
+		<tag>HEAD</tag>
 	</scm>
+	<distributionManagement>
+		<repository>
+			<id>ecwise.internal</id>
+			<name>EC Wise Nexus Managed Release Repository</name>
+			<url>https://nexus.ecwise.com/content/repositories/releases/</url>
+			<uniqueVersion>false</uniqueVersion>
+		</repository>
+		<snapshotRepository>
+			<id>ecwise.snapshots</id>
+			<name>EC Wise Nexus Managed Snapshot Repository</name>
+			<url>https://nexus.ecwise.com/content/repositories/snapshots/</url>
+			<layout>default</layout>
+		</snapshotRepository>
+	</distributionManagement>
 	<developers>
 		<developer>
 			<id>esheri3</id>
